@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>register</title>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="styles/Styles.css">
+   <script src="js/myscript.js"></script>
+
+</head>
+<body>
+<center>
+		<div>
+		<a href="http://localhost/1_iwt2/index.html">
+		<img src="images/logo4.png" alt="mainlogo" height="33%" width="33%">
+		</a>
+		</div>
+</center>
+<div class="temp">
+ <center>
+	<h1 >W i t c h e r  c l o t h</h1>
+	<h2 >Sign Up </h2>
+	<h3 >New member? create a new account with your details.</h3>
+</center>
+	<hr color="green";>
+    <form action="signup.php" onsubmit ="return validateForm()" method="post" enctype="multipart/form-data">
+    <label>Name</label>
+    <input type="text" id="fname" name="name" placeholder="Name">
+    <label>Email</label>
+    <input type="email" id="mail" name="email" placeholder="Email" required>
+    <label>Password</label>
+    <input name="password" id="pswd1" type="password" placeholder="Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
+    <span id = "message1" style="color:red"> </span>
+    <label>Confirm Password</label>
+    <input type="password" name="cpassword" placeholder="Re-Enter Password" id="pswd2" >
+    <span id = "message2" style="color:red"> </span>
+	<label>Upload Your profile picture</label>
+	<input type="file" name="image" accept="image/jpg,image/jpeg,image/png">
+    <label> <input type="submit" name="submit" value="Sign Up"></label>
+	</form>
+	<p><a href="login.html" class="add"><center>Already have an account</center></a></p>
+</div>
+</body>
+</html>

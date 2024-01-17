@@ -1,0 +1,47 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    max-width: 50%;
+  	margin: auto;
+	background-image: url("images/bgimage1.jpeg");
+	background-size: 100%;
+	
+}
+input[type=text],[type=password],[type=email] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.temp {
+  color: white;
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+  padding: 10px 20px;
+  margin: 10px 0;
+}
+.add{
+  color: green;
+}
+.add:hover {
+  color: white;
+}
