@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>WitcherClothes.com</title>
+	<style>
+		.container
+		{
+			position:relative;
+			text-align:center;
+			height:auto;
+			width:auto;
+			overflow:hidden;
+			
+		}
+		.textslide
+		{
+			position:absolute;
+			left:10px;
+			top:160px;
+			padding-left:100px;
+			font-family:Helvetica, sans-serif;
+			
+			color:white;
+		}
+		.textslide2
+		{
+			
+			position:absolute;
+			left:10px;
+			top:160px;
+			padding-left:30px;
+			font-family:Helvetica, sans-serif;
+			color:white;
+		}
+
+		ul
+		{ 	
+			list-style-type:none;
+			margin:0;
+			padding:0;
+			overflow:hidden;
+			background-color: #333;
+		}
+
+		li
+		{
+			float:left;
+			padding-left:100px;
+		}
+
+
+		li a
+		{
+			display:block;
+			text-align:center;
+			color:white;
+			padding:14px 16px;
+			text-decoration:none;
+			font-family:Helvetica, sans-serif;
+			font-size:19px;
+		}
+
+
+		li a:hover
+		{
+			background-color:#111;
+		}
+		
+
+
+		.card
+		{
+			height:370px;
+			width:260px;
+			background-color:blue;
+			border-radius:15px;
+			display:flex;
+			justify-content: center;
+			transition:.5s;
+		}
+		
+		.border
+		{	
+			height:360px;
+			width:250px;	
+			background-color:transparent;
+			border-radius: 13px;
+			position:relative;
+			transition:.5s;
+			
+		}
+		
+		
+		.card:hover .border{
+			border:1px solid white;
+			background-color: rgba(255, 255, 255, 0.6);
+			transition:.5s;
+		}
+		
+		h2
+		{
+			color:white;
+			font-family:sans-serif;
+			text-align:center;
+			opacity:0;
+			transition:.5s;
+		}
+
+		.card:hover h2
+		{
+			opacity:1;
+			transition:.5s;
+		}
+		
+
+		
+
+		.images
+		{
+			background:url(img/8.png) center center no-repeat rgba(255, 255, 255, 0.6);
+			background-size:100%;
+			transition:.5s;
+		}
+		
+
+
+		.images:hover
+		{
+			background:url(img/8.png) center center no-repeat rgba(255, 255, 255, 0.6);
+			background-size:90%;
+			transition:.5s;
+		}
+
+		.images2
+		{
+			background:url(img/9.png) center center no-repeat rgba(255, 255, 255, 0.6);
+			background-size:100%;
+			transition:.5s;
+		}
+		
+
+
+		.images2:hover
+		{
+			background:url(img/9.png) center center no-repeat rgba(255, 255, 255, 0.6);
+			background-size:90%;
+			transition:.5s;
+		}
+
+
+		.images3
+		{
+			background:url(img/10.png) center center no-repeat rgba(255, 255, 255, 0.6);
+			background-size:100%;
+			transition:.5s;
+		}
+		
+
+
+		.images3:hover
+		{
+			background:url(img/10.png) center center no-repeat rgba(255, 255, 255, 0.6);
+			background-size:90%;
+			transition:.5s;
+		}
+
+
+
+
+		.images4
+		{
+			background:url(img/13.png) center center no-repeat rgba(255, 255, 255, 0.6);
+			background-size:100%;
+			transition:.5s;
+		}
+		
+
+
+		.images4:hover
+		{
+			background:url(img/13.png) center center no-repeat rgba(255, 255, 255, 0.6);
+			background-size:90%;
+			transformation	
+			transition:.5s;
+		}
+
+
+		.s2ndposter
+		{
+			display:flex;
+			position:relative;
+			transistion: .5s
+		}
+
+
+		.s2ndposter:hover
+		{
+			display:flex;
+			position:relative;
+			animation-name:goppa;
+			animation-duration:4s;
+			transistion: .5s
+		}
+		
+
+		@keyframes goppa
+		{
+			0%  		{left:0px; }
+			25%		{left:10px;}
+			50%		{left:30px;}
+			100%		{left:70px; top:50px;}	
+			
+		}
+		
+
+		.class box
+		{
+			display:flex;
+			justify-content:center;
+			margin:0;
+			padding:0;
+			width:250px;
+			height:360px;
+			background-color:green;
+			
+		
+		}
+		
+		.class boxb
+		{
+			height:360px;
+			width:250px;	
+			background-color:transparent;
+			border-radius: 13px;
+			position:relative;
+			
+		
+		}
+
+
+.left
+{
+padding-top:20px;
+display:inline;
+float:right;
+
+}
+
+
+.logo
+{
+
+padding-top:5px;
+padding-left:0px;
+padding-right:0px;
+float:left;
+}
+
+
+.lefti
+{
+padding-top:25px;
+display:inline;
+float:right;
+
+}
+
+
+
+.leftii
+{
+padding-top:50px;
+display:inline;
+float:right;
+
+}
+
+
+	</style>
+
+</head>
+<body style="height:100vh; margin:0; background-image:url(img/backgii.jpg); ">
+ 
+
+<div style="background-color:#111;">
+		<div>
+		<a href="#"><img class="logo" src="img/logo4.png" alt="mainlogo" height=11% width=11%></a>
+	
+
+		<a href="http://localhost/2_saraf/login.html"><img class="left" src="img/users.png" height=6% width=6%></a>
+		
+		<hr class="lefti" style="height:40px;  border:3px solid white; border-radius:6px; background-color:white; display:inline; "  >
+		<a href="#"><img class="left" src="img/cart.png" height=6% width=6%></a>
+		<hr class="lefti" style="height:40px;  border:3px solid white; border-radius:6px; background-color:white; display:inline; "  >	
+		<a href="#"><img class="left" src="img/search.png" height=6% width=6%></a>	
+		
+		
+		</div>
+<div class="leftii">
+<input type=text  style="padding-top:5px; padding-bottom:5px; border:5px solid white; border-radius:30px; background-color:white; padding-left:30px;" value="SEARCH HERE...">
+</div>
+
+
+		<div style="padding-top:95px;">
+		<hr style="border:5px solid white; border-radius:8px; background-color:white; width:1500px;">
+		</div>
+		
+	<br><br><br>
+
+	<div class="container">
+			
+		<img src="img/6.png" >
+			<div class="textslide">
+				<marquee behavior="slide" direction="right" hspace="60" scrollamount="30"  width="600px" ><b style="font-size:80px;">Professional</b></marquee><br>
+				<marquee behavior="slide" direction="right" scrollamount="30" hspace="20" width="600px"><b style="font-size:80px;">Outfit Solution</b></marquee><br>
+			</div>
+			<div class="textslide2" >
+			<br><br><br><br><br><br><br><br><br><br><br><br>
+			<marquee behavior="slide" direction="right" hspace="550px" scrollamount="10"  width="150px">
+				<a id="hit" href="http://localhost/aman/index.php"  style=" font-size:18px; text align:center; text-decoration:none; color:white; background-color:#6FD559; border:15px solid #6FD559; ">SHOP MORE</a>
+			</marquee>
+			</div>
+			
+	</div><br><br><br>
+
+	<ul>
+		<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+		<li><a href="#">Home</a></li>
+		<li><a href="http://localhost/aman/index.php">Men</a></li>
+		<li><a href="http://localhost/4_deni/accessories.html">Accessories</a></li>
+		<li><a href="http://localhost/4_deni/women.html">Women</a></li>
+		<li><a href="http://localhost/4_deni/kids.html">Kids</a></li>
+		<li><a href="">About Us</a></li>
+	</ul>
+
+</div>
+
+<br><br>
+
+
+		
+<div>
+		<div  style=" display:flex; position:absolute; padding-top:20px; ">
+		<img src="img/POSTERONEWW.png"   width=100%  height=100% style="max-width:100%;">
+		</div>
+</div>
+
+
+
+		<div>
+		<img src="img/POSTER2.png" width=100% style="display:block; padding-top:400px; position:absolute;">
+		</div>
+
+		<div>
+		<img src="img/nike.png" width=100% style="display:block; padding-top:400px; position:absolute;">
+		</div>
+		<div>
+		<img src="img/addidas.png" width=100% style="display:block; padding-top:400px; position:absolute;">
+		</div>
+
+
+
+		<div  style="padding-top:690px; padding-left:800px;">
+		<a href=""><hr id="mini" style="display:block;  position:absolute; float:right; padding-top:10px; background-color:white; border:13px solid white; width:10%; border-radius:10px;" >
+		<p style="display:block;  position:absolute; float:right; color:black; padding-left:30px; font-family:calibri" ><b>SHOP FOR NIKE</b></p></a>
+		</div>
+
+		<div  style="padding-top:0px; padding-left:1200px; ">
+		<a href=""><hr  style="display:block;  position:absolute; float:right; padding-top:10px; background-color:white; border:13px solid white; width:10%; border-radius:10px;" >
+		<p style="display:block;  position:absolute; float:right; color:black; padding-left:30px; font-family:calibri" ><b>SHOP FOR ADIDAS</b></p></a>
+		</div>
+
+
+</div>
+
+<br><br>
+<br><br>
+<br><br><br><br>
+<br><br>
+
+
+
+		<center><b style="font-family:sans-serif; color:white; font-size:30px; ">NEW ARRIVALS</b></center><BR><br>
+
+		<div style="display:flex; background-color:#111; padding-left:110px;">
+
+		<div class="cardhub"style="margin:30px;">
+		<div class="card images">
+			<div class="border">
+			<h2><a href="" style="text-decoration:none; color:#333; justify-content:center;"><br><br><br><br>
+			NIKE REX-R<br><br>Price&nbsp&nbsp:&nbsp&nbsp6000.00<br>
+			Brand&nbsp&nbsp:&nbsp&nbspNike<br>
+			Size&nbsp&nbsp:&nbsp&nbsp31
+			<p style="display:block; color:white;  position:absolute;background-color:#111; margin-left:60px; padding:5px; border-radius:15px;">Shop Now</p>
+			
+			</a></h2>
+			</div>
+		</div>
+ 		</div>
+		
+		<div class="cardhub" style="margin:30px; ">
+		<div class="card images2">
+			<div class="border">
+			<h2>	
+			<a href="" style="text-decoration:none; color:#333; justify-content:center;"><br><br><br><br>	
+			WOMEN TSHIRT<br><br>Price&nbsp&nbsp:&nbsp&nbsp2500.00<br>
+			Brand&nbsp&nbsp:&nbsp&nbspWave<br>
+			Size&nbsp&nbsp:&nbsp&nbspMedium 	
+			<p style="display:block;  color:white; position:absolute;background-color:#111; margin-left:60px; padding:5px; border-radius:15px;">Shop Now</p></a></h2>	
+			</div>
+		</div>
+ 		</div>
+
+		<div class="cardhub" style="margin:30px; ">
+		<div class="card images3">
+			<div class="border">
+			<h2>
+			<a href="http://localhost/aman/index.php" style="text-decoration:none; color:#333; justify-content:center;"><br><br><br><br>	
+			MEN TSHIRT<br><br>Price&nbsp&nbsp:&nbsp&nbsp1000.00<br>
+			Brand&nbsp&nbsp:&nbsp&nbspDeedat<br>
+			Size&nbsp&nbsp:&nbsp&nbspMedium 	
+			<p style="display:block; color:white; position:absolute;background-color:#111; margin-left:60px; padding:5px; border-radius:15px;">Shop Now</p></a></h2>
+			</div>
+		</div>
+ 		</div>
+
+		<div class="cardhub" style="margin:30px;">
+		<div class="card images4">
+			<div class="border">
+			<h2>			
+			<a href="" style="text-decoration:none; color:#333; justify-content:center;"><br><br><br><br>	
+			PUMA_GR BAG5<br><br>Price&nbsp&nbsp:&nbsp&nbsp4500.00<br>
+			Brand&nbsp&nbsp:&nbsp&nbspPuma<br>
+			Size&nbsp&nbsp:&nbsp&nbspMedium 	
+			<p style="display:block; position:absolute; color:white; background-color:#111; margin-left:60px; padding:5px; border-radius:15px;">Shop Now</p></a></h2></h2>
+			</div>
+		</div>
+ 		</div>
+
+		
+		</div>
+		
+<br><br><br><br><br>
+		
+		<div class="box">
+			<div class="boxb">
+			<h2>box</h2>
+			</div>
+		</div>
+	
+	
+<br><br>	
+</body>
+</html>	
